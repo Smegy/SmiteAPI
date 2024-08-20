@@ -20,7 +20,7 @@ public final class SmiteAPI extends JavaPlugin {
         this.configManager = new ConfigManager(this, "config.yml");
         this.economyManager = new EconomyManager();
         this.permissionsManager = new PermissionManager(this);
-        getLogger().info("SmiteAPI has been enabled!");
+        getLogger().info("SmiteAPI has been enabled, please help me bro i am bored");
     }
 
     @Override

@@ -1,7 +1,9 @@
 package smitegee.smiteapi.config;
 
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -27,6 +29,7 @@ public class ConfigManager {
     public FileConfiguration getConfig() {
         return this.config;
     }
+
 
     public void saveConfig() {
         try {

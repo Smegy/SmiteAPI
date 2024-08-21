@@ -1,13 +1,7 @@
 package smitegee.smiteapi.CommandHelper;
 
 import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.command.SimpleCommandMap;
-import org.bukkit.command.SimpleCommandMap;
-import org.bukkit.plugin.Plugin;
-
-import java.lang.reflect.Field;
 import java.util.logging.Level;
 
 public class CommandDebugger {

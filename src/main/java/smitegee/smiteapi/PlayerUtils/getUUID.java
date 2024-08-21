@@ -12,7 +12,7 @@ public class getUUID {
 * @param player The player to get the UUID
  */
 
-    public static UUID getPlayerUUID(@NotNull Player player) {
+    public static UUID getPlayerUUID(Player player) {
         UUID playerUUID = player.getUniqueId();
         return playerUUID;
     }

@@ -1,32 +1,49 @@
 package smitegee.smiteapi.economy;
 
-import java.util.HashMap;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class EconomyManager {
 
-    /*
-    * Economy is just straight simple, makes a few things
+    private static final ConcurrentHashMap<UUID, Double> balances = new ConcurrentHashMap<>();
+
+    /**
+     * Gets the balance for a specific player.
+     *
+     * @param playerUUID The UUID of the player.
+     * @return The balance of the player.
      */
-    private HashMap<UUID, Double> balances;
-
-    public EconomyManager() {
-        this.balances = new HashMap<>();
-    }
-
-    public double getBalance(UUID playerUUID) {
+    public static double getBalance(UUID playerUUID) {
         return balances.getOrDefault(playerUUID, 0.0);
     }
 
-    public void setBalance(UUID playerUUID, double amount) {
+    /**
+     * Sets the balance for a specific player.
+     *
+     * @param playerUUID The UUID of the player.
+     * @param amount     The new balance to set.
+     */
+    public static void setBalance(UUID playerUUID, double amount) {
         balances.put(playerUUID, amount);
     }
 
-    public void addBalance(UUID playerUUID, double amount) {
-        balances.put(playerUUID, getBalance(playerUUID) + amount);
+    /**
+     * Adds an amount to the player's balance.
+     *
+     * @param playerUUID The UUID of the player.
+     * @param amount     The amount to add.
+     */
+    public static void addBalance(UUID playerUUID, double amount) {
+        balances.merge(playerUUID, amount, Double::sum);
     }
 
-    public void subtractBalance(UUID playerUUID, double amount) {
-        balances.put(playerUUID, getBalance(playerUUID) - amount);
+    /**
+     * Subtracts an amount from the player's balance.
+     *
+     * @param playerUUID The UUID of the player.
+     * @param amount     The amount to subtract.
+     */
+    public static void subtractBalance(UUID playerUUID, double amount) {
+        balances.merge(playerUUID, -amount, Double::sum);
     }
 }

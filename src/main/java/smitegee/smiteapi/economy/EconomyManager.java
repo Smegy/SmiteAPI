@@ -5,6 +5,9 @@ import java.util.UUID;
 
 public class EconomyManager {
 
+    /*
+    * Economy is just straight simple, makes a few things
+     */
     private HashMap<UUID, Double> balances;
 
     public EconomyManager() {

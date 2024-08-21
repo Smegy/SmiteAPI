@@ -8,6 +8,8 @@ public class PermissionManager {
 
     private JavaPlugin plugin;
 
+    //Dunno why i did this but its here
+
     public PermissionManager(JavaPlugin plugin) {
         this.plugin = plugin;
     }

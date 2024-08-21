@@ -6,6 +6,7 @@ import org.bukkit.entity.Player;
 
 public class PlayerUtils {
 
+    //pretty simple to understand
     public static void teleportPlayer(Player player, Location location) {
         player.teleport(location);
     }

@@ -21,7 +21,7 @@ public class ItemInit {
         }
         return item;
     }
-
+    //All the "makeItems" are here,
     public ItemStack makeItem(Material mat, int amount) {
         return new ItemStack(mat, amount);
     }

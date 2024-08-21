@@ -1,7 +1,12 @@
 package smitegee.smiteapi;
 
+import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
+import smitegee.smiteapi.ItemHelper.ItemHelper;
 
+import java.util.Arrays;
 import java.util.UUID;
 
 public final class SmiteAPI extends JavaPlugin {
@@ -12,9 +17,6 @@ public final class SmiteAPI extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         getLogger().info("SmiteAPI has been enabled.");
-
-        // Example usage of EconomyManager
-
     }
 
     @Override
@@ -22,5 +24,6 @@ public final class SmiteAPI extends JavaPlugin {
         // Plugin shutdown logic
         getLogger().info("SmiteAPI has been disabled!");
     }
+
 
 }

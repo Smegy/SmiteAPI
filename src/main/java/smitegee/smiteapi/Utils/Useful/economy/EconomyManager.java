@@ -1,4 +1,4 @@
-package smitegee.smiteapi.economy;
+package smitegee.smiteapi.Utils.Useful.economy;
 
 import java.util.HashMap;
 import java.util.UUID;

@@ -1,0 +1,12 @@
+Hey! If you see this you are probably gonna see changelogs of versions here,
+this file is so that i just remember what i added lol
+
+1.6
+
+Added an ".addItemFlag(ItemFlag)" to the ItemBuilder.
+Added a ".removeItemFlag(ItemFlag)" to the ItemBuilder.
+Added a ".setUnbreakable(true/false)" to the ItemBuilder.
+Added a ".removeEnchantment" to the ItemBuilder.
+
+Changed the pom.xml to 1.6 (obviously)
+

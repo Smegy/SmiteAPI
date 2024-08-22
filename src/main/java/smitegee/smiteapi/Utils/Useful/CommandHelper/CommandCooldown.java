@@ -1,4 +1,4 @@
-package smitegee.smiteapi.CommandHelper;
+package smitegee.smiteapi.Utils.Useful.CommandHelper;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package smitegee.smiteapi.InventoryUtilities;
+package smitegee.smiteapi.Utils.Useful.InventoryUtilities;
 
 import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;

@@ -1,9 +1,8 @@
-package smitegee.smiteapi.ItemHelper;
+package smitegee.smiteapi.Utils.Useful.ItemHelper;
 
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
-import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -43,6 +42,27 @@ public class ItemHelper {
             item.addUnsafeEnchantment(enchantment, level);
             return this;
         }
+
+        public ItemBuilder removeEnchantment(Enchantment enchantment) {
+            item.removeEnchantment(enchantment);
+            return this;
+        }
+
+        public ItemBuilder addItemFlag(ItemFlag itemFlag) {
+            item.addItemFlags(itemFlag);
+            return this;
+        }
+
+        public ItemBuilder removeItemFlag(ItemFlag itemFlag) {
+            item.removeItemFlags(itemFlag);
+            return this;
+        }
+
+        public ItemBuilder setUnbreakable() {
+            setUnbreakable();
+            return this;
+        }
+
 
 
         public ItemStack build() {

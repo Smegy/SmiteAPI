@@ -26,3 +26,9 @@ Added a getBalance in-game command (not registered yet)
 Used LogMessage in SmiteAPI.java
 
 
+------------------
+FIX:
+
+ran the package
+
+

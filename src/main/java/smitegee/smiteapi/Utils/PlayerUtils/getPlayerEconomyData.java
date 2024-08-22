@@ -1,6 +1,6 @@
 package smitegee.smiteapi.Utils.PlayerUtils;
 
-import smitegee.smiteapi.Utils.economy.EconomyManager;
+import smitegee.smiteapi.economy.EconomyManager;
 
 import java.util.UUID;
 

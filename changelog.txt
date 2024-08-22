@@ -13,7 +13,16 @@ Changed the pom.xml to 1.6 (obviously)
 
 ----------------
 
-Removed the getUUID class and transfeted it to "getPlayerData.java" class...
+Removed the getUUID class and transferred it to "getPlayerData.java" class...
 Added a "getPlayerEconomyData.java" class
 Removed the Useful package
+
+-----------------
+
+Split up the things...
+Added a little talking in SmiteAPI.java
+Fixed LogMessage
+Added a getBalance in-game command (not registered yet)
+Used LogMessage in SmiteAPI.java
+
 

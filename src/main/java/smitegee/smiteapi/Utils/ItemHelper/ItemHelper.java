@@ -1,4 +1,4 @@
-package smitegee.smiteapi.Utils.Useful.ItemHelper;
+package smitegee.smiteapi.Utils.ItemHelper;
 
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;

@@ -1,4 +1,4 @@
-package smitegee.smiteapi.Utils.Useful.CommandHelper;
+package smitegee.smiteapi.Utils.CommandHelper;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;

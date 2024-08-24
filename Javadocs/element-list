@@ -1,0 +1,8 @@
+smitegee.smiteapi
+smitegee.smiteapi.economy
+smitegee.smiteapi.Helpers.InventoryUtilities
+smitegee.smiteapi.Helpers.ItemHelper
+smitegee.smiteapi.ingame.Commands.Economy
+smitegee.smiteapi.Utils.CommandHelper
+smitegee.smiteapi.Utils.ConfigUtilities
+smitegee.smiteapi.Utils.PlayerUtils

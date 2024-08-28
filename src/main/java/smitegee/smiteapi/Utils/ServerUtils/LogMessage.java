@@ -1,4 +1,4 @@
-package smitegee.smiteapi.Utils.ConfigUtilities;
+package smitegee.smiteapi.Utils.ServerUtils;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

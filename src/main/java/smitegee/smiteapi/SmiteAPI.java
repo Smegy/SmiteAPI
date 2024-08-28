@@ -1,7 +1,10 @@
 package smitegee.smiteapi;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import smitegee.smiteapi.Utils.ConfigUtilities.LogMessage;
+import smitegee.smiteapi.Utils.ServerUtils.LogMessage;
+import smitegee.smiteapi.ingame.Commands.Economy.setBalance;
+import smitegee.smiteapi.ingame.Commands.Economy.getBalance;
+import smitegee.smiteapi.ingame.Commands.Economy.transferBalance;
 
 public final class SmiteAPI extends JavaPlugin {
 
@@ -20,6 +23,10 @@ public final class SmiteAPI extends JavaPlugin {
     @Override
     public void onEnable() {
         LogMessage.info(this, "SmiteAPI has been enabled");
+        //REGISTER COMMANDS
+        getCommand("setbalance").setExecutor(new setBalance());
+        getCommand("getbalance").setExecutor(new getBalance());
+        getCommand("transferbalance").setExecutor(new transferBalance());
 
     }
 

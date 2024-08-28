@@ -2,3 +2,20 @@ name: SmiteAPI
 version: '${project.version}'
 main: smitegee.smiteapi.SmiteAPI
 api-version: '1.19'
+
+commands:
+  setbalance:
+    description: Sets the balance of a player.
+    usage: /setbalance <player> <amount>
+    permission: smiteapi.setbalance
+    permission-message: You do not have permission to execute this command.
+
+    getbalance:
+      description: Gets your balance
+      usage: /getbalance
+      permission-message: You do not have permission to execute this command.
+
+    transferbalance:
+      description: Give your money to another player...
+      usage: /transferBalance
+      permission-message: You do not have permission to execute this command.

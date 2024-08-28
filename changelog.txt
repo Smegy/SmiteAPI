@@ -1,34 +1,10 @@
-Hey if you are here then this file is so that I just remember what I added lol
+1.7
+----------
+Made the setBalance and getBalance commands (registered)
+Changed the CommandDebugger to show action bars instead of normal stuff
+Added javadocs to the economy manager
 
-1.6
+JAVADOCS ARE NOW IN THE BRANCH Javadocs.
 
-----------------
-
-Added an ".addItemFlag(ItemFlag)" to the ItemBuilder.
-Added a ".removeItemFlag(ItemFlag)" to the ItemBuilder.
-Added a ".setUnbreakable(true/false)" to the ItemBuilder.
-Added a ".removeEnchantment" to the ItemBuilder.
-
-Changed the pom.xml to 1.6 (obviously)
-
-----------------
-
-Removed the getUUID class and transferred it to "getPlayerData.java" class...
-Added a "getPlayerEconomyData.java" class
-Removed the Useful package
-
------------------
-
-Split up the things...
-Added a little talking in SmiteAPI.java
-Fixed LogMessage
-Added a getBalance in-game command (not registered yet)
-Used LogMessage in SmiteAPI.java
-
-
-------------------
-FIX:
-
-ran the package
-
-
+Renamed ConfigUtils -> ServerUtils
+Added a transferBalance

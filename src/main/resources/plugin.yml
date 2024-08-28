@@ -1,4 +1,0 @@
-name: SmiteAPI
-version: '${project.version}'
-main: smitegee.smiteapi.SmiteAPI
-api-version: '1.19'
